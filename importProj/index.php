@@ -37,7 +37,7 @@ if(isset($_POST['sub'])){
 
 
 
-// // read file
+//  read file
  
 // $myfile2 = fopen("csv.txt", "r") or die("Unable to open file!");
 
