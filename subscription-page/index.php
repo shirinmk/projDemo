@@ -3,16 +3,33 @@ $host = "localhost";
 $username = "root";
 $password = "root";
 $database_name = 'firstedu';
+$port = 3307;
 
 
 // Create connection
-$conn = mysqli_connect($host, $username, $password,$database_name);
+$conn = mysqli_connect("$host:$port", $username, $password,$database_name);
 
 // Check connection
 if (mysqli_connect_errno()):
   printf("connect failes: $s\n",mysqli_connect_error());
   exit();
 endif;
+
+// $user = 'root';
+// $password = 'root';
+// $db = 'firstedu';
+// $host = 'localhost';
+// $port = 3307;
+
+// $link = mysqli_connect(
+//    "$host:$port", 
+//    $user, 
+//    $password
+// );
+// $db_selected = mysqli_select_db(
+//    $db, 
+//    $link
+// );
 
 // check submit button clicked and get values of each fields
 if(isset($_POST['submit'])){
