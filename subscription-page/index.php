@@ -15,21 +15,6 @@ if (mysqli_connect_errno()):
   exit();
 endif;
 
-// $user = 'root';
-// $password = 'root';
-// $db = 'firstedu';
-// $host = 'localhost';
-// $port = 3307;
-
-// $link = mysqli_connect(
-//    "$host:$port", 
-//    $user, 
-//    $password
-// );
-// $db_selected = mysqli_select_db(
-//    $db, 
-//    $link
-// );
 
 // check submit button clicked and get values of each fields
 if(isset($_POST['submit'])){
@@ -89,3 +74,9 @@ if(isset($_POST['submit'])){
     </form>
 </body>
 </html>
+
+<!--
+     things to work:
+check fields validation 
+css  '
+-->
